@@ -199,6 +199,9 @@ Rails.application.routes.draw do
   end
 
   get 'community_spotlight' => "contacts#spotlight", :as => 'community_spotlight'
+
+  post 'github-receive' => "commits#receive"
+
   # Mobile site
 
   get 'mobile/toggle', :to => 'home#toggle_mobile', :as => 'toggle_mobile'
