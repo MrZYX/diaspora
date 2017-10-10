@@ -1,0 +1,2 @@
+persistent_timeout 500
+first_data_timeout 60
