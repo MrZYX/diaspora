@@ -6,7 +6,7 @@ StopWhenUnneeded=true
 [Service]
 User=diaspora
 WorkingDirectory=/home/diaspora/diaspora
-Environment=RAILS_ENV=production
+Environment=RAILS_ENV=production LD_PRELOAD=/usr/lib/libjemalloc.so
 ExecStart=/usr/bin/chruby-exec 2.3 -- bin/bundle exec puma -b unix:///run/diaspora/diaspora.sock -e $RAILS_ENV
 Restart=always
 CPUAccounting=true
