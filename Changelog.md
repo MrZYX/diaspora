@@ -11,14 +11,26 @@
 ## Features
 * Add client-side cropping of profile image uploads [#7581](https://github.com/diaspora/diaspora/pull/7581)
 * Add client-site rescaling of post images if they exceed the maximum possible size [#7734](https://github.com/diaspora/diaspora/pull/7734)
+* Add backend for archive import [#7660](https://github.com/diaspora/diaspora/pull/7660)
 
-# 0.7.11.0
+# 0.7.12.0
 
 ## Refactor
 
 ## Bug fixes
 
 ## Features
+
+# 0.7.11.0
+
+## Refactor
+* Enable paranoid mode for devise [#8003](https://github.com/diaspora/diaspora/pull/8003)
+* Refactor likes cucumber test [#8002](https://github.com/diaspora/diaspora/pull/8002)
+
+## Features
+* Add a manifest.json file as a first step to make diaspora\* a Progressive Web App [#7998](https://github.com/diaspora/diaspora/pull/7998)
+* Allow `web+diaspora://` links to link to a profile with only the diaspora ID [#8000](https://github.com/diaspora/diaspora/pull/8000)
+* Support TOTP two factor authentication [#7751](https://github.com/diaspora/diaspora/pull/7751)
 
 # 0.7.10.0
 
