@@ -1,7 +1,8 @@
 .nav.navbar-inverse.navbar-fixed-top#main-nav
   .container-fluid
     .navbar
-      = link_to(image_tag("branding/logos/asterisk_white_mobile.png", class: "img-responsive"),
+      .header-titl-title
+        = link_to(image_tag("branding/logos/asterisk_white_mobile.png", class: "img-responsive"),
           stream_path, class: "navbar-brand header-title")
 
       - if user_signed_in?
