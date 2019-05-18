@@ -668,6 +668,8 @@ GEM
       rake (>= 0.9, < 13)
       sass (~> 3.4.20)
     secure_headers (6.1.0)
+    sentry-raven (2.9.0)
+      faraday (>= 0.7.6, < 1.0)
     shellany (0.0.1)
     shoulda-matchers (4.0.1)
       activesupport (>= 4.2.0)
@@ -912,6 +914,7 @@ DEPENDENCIES
   rubyzip (= 1.2.2)
   sass-rails (= 5.0.7)
   secure_headers (= 6.1.0)
+  sentry-raven
   shoulda-matchers (= 4.0.1)
   sidekiq (= 5.2.5)
   sidekiq-cron (= 1.1.0)

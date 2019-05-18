@@ -39,6 +39,7 @@ defaults:
       debug:
         sql: false
         federation: false
+    sentry_dsn:
   server:
     listen: '0.0.0.0:3000'
     rails_environment: 'development'
