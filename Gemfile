@@ -202,6 +202,7 @@ gem "will_paginate",           "3.1.7"
 # Logging
 
 gem "logging-rails", "0.6.0", require: "logging/rails"
+gem "sentry-raven"
 
 # Reading and writing zip files
 
