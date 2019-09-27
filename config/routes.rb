@@ -224,6 +224,9 @@ Rails.application.routes.draw do
   # Relay
   get ".well-known/x-social-relay" => "social_relay#well_known"
 
+  # Campaign
+  get "/campaign/:invite_code" => "home#campaign"
+
   # Startpage
   root :to => 'home#show'
   get "podmin", to: "home#podmin"

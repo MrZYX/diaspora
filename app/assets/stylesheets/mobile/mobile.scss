@@ -873,3 +873,31 @@ select#aspect_ids_ {
   // The fetching of the pod version is not done on mobile currently so we hide this alert.
   display: none;
 }
+
+.landing-info-card {
+  margin-bottom: 24px;
+}
+
+.dandelion-background {
+  background: image-url('dandelion.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .jumbotron {
+    background-color: rgba($black, .4);
+    padding-top: 70px;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    h1,
+    h2 {
+      color: $white;
+      font-weight: bold;
+      text-shadow: 0 2px 2px $black;
+    }
+  }
+}

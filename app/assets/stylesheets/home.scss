@@ -61,4 +61,13 @@
       padding: 1em;
     }
   }
+
+
+  &.action-campaign {
+    .sign_up a {
+      background: rgba($black, .2);
+      padding: 12px;
+      color: white;
+    }
+  }
 }

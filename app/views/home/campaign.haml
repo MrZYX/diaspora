@@ -1,0 +1,35 @@
+:css
+  #app #main {
+    padding: 0;
+  }
+
+.dandelion-background
+  .jumbotron
+    .container-fluid.home-user
+      .row
+        .col-md-12.text-center
+          %h1= t("home.default.headline", pod_name: pod_name)
+          - if pod_name != "diaspora*"
+            %h2.part-of-diaspora
+              != t("home.default.part_of_diaspora",
+                diaspora_site_link: link_to(t("home.default.diaspora_site_link"), "https://diasporafoundation.org/"))
+          %h2= t("home.default.byline")
+          %h2.sign_up= link_to t('devise.shared.links.sign_up'), invite_code_path(params[:invite_code])
+
+.container-fluid
+  .row
+    .col-md-4
+      .landing-info-card
+        %h3.text-center
+          = t("home.default.own_your_data")
+        = t("home.default.own_your_data_info")
+    .col-md-4
+      .landing-info-card
+        %h3.text-center
+          = t("home.default.choose_your_audience")
+        = t("home.default.choose_your_audience_info")
+    .col-md-4
+      .landing-info-card
+        %h3.text-center
+          = t("home.default.be_who_you_want_to_be")
+        = t("home.default.be_who_you_want_to_be_info")
