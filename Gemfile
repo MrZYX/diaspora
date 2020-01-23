@@ -99,7 +99,7 @@ gem "js-routes",         "1.4.7"
 gem "js_image_paths",    "0.1.1"
 gem "sprockets-es6",     "0.9.2"
 
-source "https://rails-assets.org" do
+source "https://gems.diasporafoundation.org" do
   gem "rails-assets-jquery",                              "3.4.1" # Should be kept in sync with jquery-rails
   gem "rails-assets-jquery.ui",                           "1.11.4"
 
@@ -174,10 +174,6 @@ gem "openid_connect", "1.1.8"
 # Serializers
 
 gem "active_model_serializers", "0.9.7"
-
-# XMPP chat dependencies
-gem "diaspora-prosody-config",    "0.0.7"
-gem "rails-assets-diaspora_jsxc", "0.1.5.develop.7", source: "https://rails-assets.org"
 
 # Tags
 
@@ -317,7 +313,7 @@ group :development, :test do
   # Jasmine (client side application tests (JS))
   gem "jasmine",                   "3.4.0"
   gem "jasmine-jquery-rails",      "2.0.3"
-  gem "rails-assets-jasmine-ajax", "4.0.0", source: "https://rails-assets.org"
+  gem "rails-assets-jasmine-ajax", "4.0.0", source: "https://gems.diasporafoundation.org"
   gem "sinon-rails",               "1.15.0"
 
   # For `assigns` in controller specs
