@@ -4,9 +4,9 @@ class CommitsController < ApplicationController
 
     post_message build_message(payload) unless payload['commits'].empty?
 
-    render nothing: true, status: 201
+    head 201
   rescue JSON::ParserError, ActiveRecord::RecordInvalid
-    render nothing: true, status: 422
+    head 422
   end
 
   private
