@@ -24,9 +24,17 @@ module Api
       end
 
       def hide
+        return render_error(422, "Missing parameter") if params[:hide].nil?
+
         post = find_post
-        current_user.toggle_hidden_shareable(post)
-        head :no_content
+        hidden = current_user.is_shareable_hidden?(post)
+
+        if (params[:hide] && !hidden) || (!params[:hide] && hidden)
+          current_user.toggle_hidden_shareable(post)
+          head :no_content
+        else
+          render_error(params[:hide] ? 409 : 410, params[:hide] ? "Post already hidden" : "Post not hidden")
+        end
       end
 
       def mute
@@ -58,7 +66,7 @@ module Api
       def vote
         post = find_post
         begin
-          poll_vote = poll_service.vote(post.id, params[:poll_answer_id])
+          poll_vote = poll_service.vote(post.id, params[:poll_answer])
         rescue ActiveRecord::RecordNotFound
           # This, but not the find_post above, should return a 422,
           # we just keep poll_vote nil so it goes into the else below
