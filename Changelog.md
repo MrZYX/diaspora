@@ -27,7 +27,18 @@ Although the chat was never enabled per default and was marked as experimental, 
 * Add client-site rescaling of post images if they exceed the maximum possible size [#7734](https://github.com/diaspora/diaspora/pull/7734)
 * Add backend for archive import [#7660](https://github.com/diaspora/diaspora/pull/7660)
 
+# 0.7.14.0
+
+## Refactor
+
+## Bug fixes
+
+## Features
+
 # 0.7.13.0
+
+## Security
+* Fixes [USN-4274-1](https://usn.ubuntu.com/4274-1/), a potential Denial-of-Service vulnerability in Nokogiri. [#8108](https://github.com/diaspora/diaspora/pull/8108)
 
 ## Refactor
 * Set better example values for unicorn stdout/stderr log settings [#8058](https://github.com/diaspora/diaspora/pull/8058)
@@ -35,6 +46,7 @@ Although the chat was never enabled per default and was marked as experimental, 
 
 ## Bug fixes
 * Fix error while trying to fetch some sites with invalid OpenGraph data [#8049](https://github.com/diaspora/diaspora/pull/8049)
+* Don't show sign up link on mobile when registrations are disabled [#8060](https://github.com/diaspora/diaspora/pull/8060)
 
 ## Features
 * Add cronjob to cleanup pending photos which were never posted [#8041](https://github.com/diaspora/diaspora/pull/8041)
