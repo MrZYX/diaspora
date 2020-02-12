@@ -853,7 +853,8 @@ DEPENDENCIES
   pronto-scss (= 0.10.0)
   pry
   pry-byebug
-
+  puma
+  rack-cors (= 1.1.1)
   rack-google-analytics (= 1.2.0)
   rack-piwik (= 0.3.0)
   rack-rewrite (= 1.5.1)
