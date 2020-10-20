@@ -1,5 +1,9 @@
 # 0.8.0.0
 
+## New configuration file!
+
+We already recommended you to move to our new TOML based configuration file. With this release diaspora\* will no longer read the YAML based configuration file at `config/diaspora.yml`. If you have not yet done so, please copy `config/diaspora.toml.example` to `config/diaspora.toml` and migrate your configuration.
+
 ## API!
 
 With the release of diaspora\* Version 0.8.0.0, we now officially support building applications on top of the diaspora\* API! Please check out [the official API documentation](https://diaspora.github.io/api-documentation/) for instructions, and please do file bugs if you notice something that could be improved!
@@ -27,11 +31,23 @@ Although the chat was never enabled per default and was marked as experimental, 
 * Add client-site rescaling of post images if they exceed the maximum possible size [#7734](https://github.com/diaspora/diaspora/pull/7734)
 * Add backend for archive import [#7660](https://github.com/diaspora/diaspora/pull/7660)
 
-# 0.7.14.0
+# 0.7.15.0
 
 ## Refactor
 
 ## Bug fixes
+
+## Features
+* Support and recommend TOML as configuration format [#8132](https://github.com/diaspora/diaspora/pull/8132)
+
+# 0.7.14.0
+
+## Refactor
+* Update the suggested Ruby version to 2.6. If you run into trouble during the update and you followed our installation guides, run `rvm install 2.6`. [#7929](https://github.com/diaspora/diaspora/pull/7929)
+
+## Bug fixes
+* Don't link to deleted users in admin user stats [#8063](https://github.com/diaspora/diaspora/pull/8063)
+* Properly validate a profile's gender field length instead of failing with a database error. [#8127](https://github.com/diaspora/diaspora/pull/8127)
 
 ## Features
 
