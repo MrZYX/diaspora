@@ -62,7 +62,7 @@ gem "rack-cors", "1.1.1", require: "rack/cors"
 
 gem "autoprefixer-rails",     "10.2.4.0"
 gem "bootstrap-sass",         "3.4.1"
-gem "bootstrap-switch-rails", "3.3.5"
+gem "bootstrap-switch-rails", "3.3.3" # 3.3.4 and 3.3.5 is broken, see https://github.com/Bttstrp/bootstrap-switch/issues/691
 gem "compass-rails",          "3.1.0"
 gem "sass-rails",             "5.0.7"
 gem "sprockets-rails",        "3.2.1"
@@ -96,13 +96,13 @@ gem "entypo-rails", "3.0.0"
 
 gem "handlebars_assets", "0.23.8"
 gem "jquery-rails",      "4.3.5"
+gem "jquery-ui-rails",   "5.0.5"
 gem "js-routes",         "1.4.9"
 gem "js_image_paths",    "0.1.1"
 gem "sprockets-es6",     "0.9.2"
 
 source "https://gems.diasporafoundation.org" do
   gem "rails-assets-jquery",                              "3.4.1" # Should be kept in sync with jquery-rails
-  gem "rails-assets-jquery.ui",                           "1.11.4"
 
   gem "rails-assets-highlightjs",                         "9.12.0"
   gem "rails-assets-markdown-it",                         "8.4.2"
@@ -151,7 +151,7 @@ gem "nokogiri",          "1.11.3"
 gem "open_graph_reader", "0.7.1" # also update User-Agent in features/support/webmock.rb and open_graph_cache_spec.rb
 gem "redcarpet",         "3.5.1"
 gem "ruby-oembed",       "0.12.0"
-gem "twitter-text",      "3.0.0"
+gem "twitter-text",      "3.1.0"
 
 # RTL support
 
@@ -260,6 +260,8 @@ group :development do
   gem "simplecov", "0.21.2", require: false
 
   gem "turbo_dev_assets", "0.0.2"
+
+  gem "listen", "3.5.1"
 end
 
 group :test do
